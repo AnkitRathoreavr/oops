@@ -1,0 +1,44 @@
+#include<stdio.h>
+int lsearch(int [5],int,int);
+
+int main()
+{
+int result,key,i;
+int a[5];
+printf("enter array element");
+
+
+
+scanf("%d",&a[i]);
+
+
+printf("enter the key to be searched");
+scanf("%d",&key);
+
+result=lsearch(a,5,key);
+
+if(result>=0)
+
+    printf("key found at index %d",result);
+    else
+
+    printf("key not found");
+    
+
+
+
+return 0;
+}
+
+int lsearch(int a[],int len,int key)
+{
+int i;
+for(i=0;i<len;i++)
+{
+    if(a[i]==key)
+    return i;
+}
+if(i==len)
+return -1;
+
+}
